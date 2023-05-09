@@ -1,0 +1,2 @@
+# roboshop-shell
+Practicing myself
