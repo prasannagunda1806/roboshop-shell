@@ -3,7 +3,7 @@ code_dir=$(pwd)
 log_file=/tmp/roboshop.log
 
 status_check(){
-    if [ $1 != 0]; then
+    if [ $1 != 0 ]; then
     echo "Success"
     else
     echo "Failure. refer {log_file} for more details"
