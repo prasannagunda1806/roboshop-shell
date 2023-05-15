@@ -11,6 +11,7 @@ status_check(){
       echo "Success"
      else
        echo "Failure , please refer roboshop.log file for more details"
+       fi
        }
 
 
