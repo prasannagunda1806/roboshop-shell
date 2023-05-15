@@ -11,7 +11,8 @@ status_check(){
       echo "Success"
      else
        echo "Failure , please refer roboshop.log file for more details"
-}
+       }
+
 
 print_head "Copying mongo db repo file"
 #copy ongo db repo fle
