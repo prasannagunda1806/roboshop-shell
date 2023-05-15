@@ -6,11 +6,12 @@ print_head(){
     echo -e "\e[32m$1\e[0m"
 }
 
-status_check(){
+status_check() {
     if [ 0 -eq = 0 ]; then
       echo "Success"
      else
        echo "Failure , please refer roboshop.log file for more details"
+       exit 1
        fi
        }
 
