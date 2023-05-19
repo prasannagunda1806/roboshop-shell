@@ -1,21 +1,4 @@
-
-code_dir=$(pwd)
-
-log_file=/tmp/roboshop.log
-rm -f ${log_file}
-
-print_head(){
-    echo -e "\e[32m$1\e[0m"
-}
-
-status_check() {
-    if [ $1 -eq 0 ]; then
-      echo "Success"
-     else
-       echo "Failure , please refer roboshop.log file for more details"
-       exit 1
-    fi
-  }
+source common.sh
 
 
 print_head "Copying mongo db repo file"
