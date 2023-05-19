@@ -8,13 +8,14 @@ print_head(){
 }
 
 status_check() {
-    if [ $1 -eq 0 ]; then
-      echo "Success"
-     else
-       echo "Failure , please refer roboshop.log file for more details"
-       exit 1
-    fi
-  }
+  if [ $1 -eq 0 ]; then
+    echo SUCCESS
+  else
+    echo FAILURE
+    echo "Read the log file ${log_file} for more information about error"
+    exit 1
+  fi
+}
   
   app_prereq_setup() {
   print_head "Create Roboshop User"
